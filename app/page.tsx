@@ -64,31 +64,32 @@ export default function Home() {
           <Link href="/" className="font-heading text-2xl tracking-tight text-navy">
             +VANTAGE
           </Link>
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-7 md:flex">
             <a href="#problem" className="text-sm font-medium text-navy/60 transition-colors hover:text-navy">
               Why Us
             </a>
             <a href="#features" className="text-sm font-medium text-navy/60 transition-colors hover:text-navy">
               Features
             </a>
-            <a href="#values" className="text-sm font-medium text-navy/60 transition-colors hover:text-navy">
-              Values
-            </a>
-            <a href="#pricing" className="text-sm font-medium text-navy/60 transition-colors hover:text-navy">
-              Pricing
-            </a>
+            <Link href="/tools" className="text-sm font-medium text-navy/60 transition-colors hover:text-navy">
+              Tools
+            </Link>
+            <Link href="/school" className="text-sm font-medium text-navy/60 transition-colors hover:text-navy">
+              Schools
+            </Link>
+            <Link href="/parents" className="text-sm font-medium text-navy/60 transition-colors hover:text-navy">
+              Parents
+            </Link>
             <Link
               href="/dashboard"
               className="rounded-full bg-navy px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-navy-light hover:shadow-lg hover:shadow-navy/20"
             >
-              Get Started
+              Open Demo
             </Link>
           </div>
-          <button className="text-navy md:hidden" aria-label="Open menu">
-            <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          <Link href="/dashboard" className="rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white md:hidden">
+            Demo
+          </Link>
         </div>
       </nav>
 
